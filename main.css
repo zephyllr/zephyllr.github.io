@@ -1,0 +1,112 @@
+/* Background */
+
+body,
+html {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+}
+
+#bg-wrapper {
+  background-image: url("img/nyc_skyline.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+main {
+  align-items: center;
+  background: rgb(255 160 122 / 30%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Main Body */
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+h1:hover,
+h2:hover {
+  transition-duration: 0.5s;
+  color: lightgoldenrodyellow;
+}
+
+.main-content {
+  margin: 2em;
+}
+
+#header {
+  animation: fadeIn 1.5s backwards;
+  font-size: 5em;
+  margin: 0.25em;
+}
+
+#header:after {
+  animation: openUp 0.5s 0.5s backwards;
+  border-bottom: 2px solid white;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 0.35em;
+  width: 75%;
+}
+
+#sub-header {
+  animation: fadeIn 1.5s 1s backwards;
+  font-size: 2em;
+  margin-top: 1.25em;
+  line-height: 1.5em;
+}
+
+#landmark {
+  display: inline-block;
+}
+
+.row {
+  display: inline-block;
+}
+
+.icon {
+  font-size: 3em;
+  text-decoration: none;
+  color: white;
+  margin: 0.5em;
+  animation: openUp 1s 1.5s backwards;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  transition-duration: 0.15s;
+  color: lightsalmon;
+}
+
+/* Key Frames */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes openUp {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
