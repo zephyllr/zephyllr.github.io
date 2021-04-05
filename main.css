@@ -8,6 +8,7 @@ html {
 }
 
 #bg-wrapper {
+  animation: fadeIn 1s backwards;
   background-image: url("img/nyc_skyline.jpeg");
   background-position: center;
   background-repeat: no-repeat;
