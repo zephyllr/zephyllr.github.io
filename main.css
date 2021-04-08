@@ -2,13 +2,14 @@
 
 body,
 html {
-  background-color: black;
+  background-color: white;
+  background-image: linear-gradient(25deg, #ef823a 0%, #ffe0ce 70%);
   height: 100%;
   margin: 0;
 }
 
 #bg-wrapper {
-  animation: fadeIn 1s backwards;
+  animation: fadeIn 2.5s 0.5s backwards;
   background-image: url("img/nyc_skyline.jpeg");
   background-position: center;
   background-repeat: no-repeat;
@@ -48,13 +49,13 @@ h2:hover {
 }
 
 #header {
-  animation: fadeIn 1.5s backwards;
+  animation: fadeIn 1.5s 1.5s backwards;
   font-size: 5em;
   margin: 0.25em;
 }
 
 #header:after {
-  animation: openUp 0.5s 0.5s backwards;
+  animation: openUp 0.5s 2s backwards;
   border-bottom: 2px solid white;
   content: "";
   display: block;
@@ -64,7 +65,7 @@ h2:hover {
 }
 
 #sub-header {
-  animation: fadeIn 1.5s 1s backwards;
+  animation: fadeIn 1.5s 2.5s backwards;
   font-size: 2em;
   margin-top: 1.25em;
   line-height: 1.5em;
@@ -83,7 +84,7 @@ h2:hover {
   text-decoration: none;
   color: white;
   margin: 0.5em;
-  animation: openUp 1s 1.5s backwards;
+  animation: openUp 1s 3s backwards;
 }
 
 .icon:hover {
